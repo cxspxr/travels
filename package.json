@@ -17,8 +17,23 @@
   },
   "homepage": "https://github.com/caspermadara/travels#readme",
   "dependencies": {
+    "browser-sync": "^2.23.6",
     "browserify": "^15.2.0",
     "express": "^4.16.2",
-    "particles.js": "^2.0.0"
+    "fortune-cookie-ru": "0.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "node-notifier": "^5.2.1",
+    "particle.js": "^1.0.7",
+    "random-words": "^1.0.0",
+    "run-sequence": "^2.2.1",
+    "rupture": "^0.7.1",
+    "vhost": "^3.0.2",
+    "watchify": "^3.10.0",
+    "yargs": "^11.0.0"
   }
 }

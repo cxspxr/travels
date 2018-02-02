@@ -1,0 +1,80 @@
+#particles-js
+    position fixed
+    z-index 1
+    width 100vw
+    height 100vh
+
+.home
+    min-height 100vh
+    display flex
+    flex-direction column
+    align-items center
+    background-size cover
+    background-position center
+
+.home
+    &-card
+        margin auto 0
+        font-size 2rem
+        letter-spacing .15rem
+        padding 2rem 0
+        width 40rem
+        max-width 90vw
+        text-align center
+
+        +below($mobile-width)
+            margin 0
+
+        &-top
+        &-description
+        &-cite
+            color white
+            padding 1rem 2rem
+            display flex
+            flex-direction column
+            align-items center
+
+        &-description
+        &-cite
+            padding 2rem
+            box-shadow -2rem 4rem 3.5rem -.3rem rgba(0,0,0, .08)
+            background-color rgba(255,255,255, .99)
+            color rgb(33,33,33)
+            position relative
+            z-index 5
+
+        &-description
+        &-cite
+            margin-bottom 1rem
+
+        &-links
+            font-size 4rem
+
+            &-container
+                margin auto
+
+            i
+                cursor pointer
+                position relative
+                z-index 5
+                transition all .3s ease
+                color #fff
+
+                &:hover
+                    color rgb(0,150,136)
+
+        &-picture
+            width 150px
+            height 150px
+            border-radius 100%
+            background-position 100% 50%
+            background-size cover
+            background-image linear-gradient(55deg, rgba(255, 165, 150, 0.3) 10%, rgba(0, 228, 255, 0.3)), url(https://instagram.fhen1-1.fna.fbcdn.net/vp/2aeefc8dcba3498821addae8d0e75bd6/5B21B100/t51.2885-15/e35/24178136_2029487367321460_1144096489274867712_n.jpg)
+            margin 0 0 1rem
+
+        &-name
+            font-size 3.5rem
+            font-weight 300
+            text-transform uppercase
+            letter-spacing .2rem
+            margin-bottom 1rem
