@@ -31,7 +31,8 @@ gulp.task('stylus', function() {
 	gulp.src('assets/stylus/main.styl')
 		.pipe(gulpif(argv.dev, sourcemaps.init()))
 		.pipe(stylus({
-            use: [rupture()]
+            use: [rupture()],
+            compress: true
         }).on('error', onError))
 		.pipe(autoprefixer())
 		.pipe(rename('style.css'))
