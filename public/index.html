@@ -12,7 +12,6 @@
     <link rel="manifest" href="/manifest.json" />
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
-
       var OneSignal = window.OneSignal || [];
       OneSignal.push(function() {
         OneSignal.init({
@@ -20,6 +19,7 @@
           autoRegister: false,
           notifyButton: {
             enable: true,
+            showCredit: false,
             colors: {
               'circle.background': '#F44336',
               'circle.foreground': 'white',
@@ -31,9 +31,8 @@
               'dialog.button.background.active': '#673AB7',
               'dialog.button.background': '#009688',
               'dialog.button.foreground': 'white'
-            }
-          },
-          text: {
+            },
+            text: {
               'tip.state.unsubscribed': 'Подписаться на обновления',
               'tip.state.subscribed': "Спасибо за подписку!",
               'tip.state.blocked': "Оповещения заблокированы!",
@@ -46,6 +45,7 @@
               'dialog.main.button.unsubscribe': 'Отписаться',
               'dialog.blocked.title': 'Разблокировать оповещения',
               'dialog.blocked.message': "Вот, что нужно сделать:"
+            }
           }
         });
       });
