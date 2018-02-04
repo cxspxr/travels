@@ -1,5 +1,5 @@
 require('./title.js')
-require('./picture.js')
+require('./theme.js')
 require('./particle.js')
 require('./year.js')
 require('./fortune.js')
